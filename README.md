@@ -1,13 +1,16 @@
-# Canonical-upgradeable-bep20
-Implement an upgradeable bep20 contract
+# sata-contracts-bsc-v1
 
-## Install dependency
+Derived from [binance-chain/canonical-upgradeable-bep20](https://github.com/binance-chain/canonical-upgradeable-bep20)
+
+The BEP20 token is deployed as an upgradeable contract, with the upgrade disabling the minting function for security.
+
+## Installation
 
 ```shell script
 npm install
 ```
 
-## Run unittests
+## Test
 
 Start ganache:
 ```shell script
