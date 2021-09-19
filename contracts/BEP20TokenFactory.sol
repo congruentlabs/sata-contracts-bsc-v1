@@ -4,7 +4,7 @@ import './BEP20UpgradeableProxy.sol';
 import './IProxyInitialize.sol';
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract BEP20TokenFactory is Ownable{
+contract BEP20TokenFactory is Ownable {
 
     address public logicImplement;
 

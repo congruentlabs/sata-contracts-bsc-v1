@@ -1,6 +1,6 @@
 # sata-contracts-bsc-v1
 
-Derived from [binance-chain/canonical-upgradeable-bep20](https://github.com/binance-chain/canonical-upgradeable-bep20)
+Derived from [binance-chain/canonical-upgradeable-bep20](https://github.com/binance-chain/canonical-upgradeable-bep20), upgraded to solidity 0.8.x.
 
 The BEP20 token is deployed as an upgradeable contract, with the upgrade disabling the minting function for security.
 

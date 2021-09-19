@@ -38,7 +38,7 @@ contract('Upgradeable BEP20 token', (accounts) => {
             true,
             bep20Owner,
             proxyAdmin,
-            {from: bep20FactoryOwner}
+            { from: bep20FactoryOwner }
         );
         truffleAssert.eventEmitted(tx, "TokenCreated",(ev) => {
             bep20TokenAddress = ev.token;
@@ -145,7 +145,7 @@ contract('Upgradeable BEP20 token', (accounts) => {
         await bep20Proxy.methods.upgradeTo(TokenNoMinting.address).send({from: proxyAdmin});
 
         jsonFile = "test/abi/TokenNoMinting.json";
-        abi= JSON.parse(fs.readFileSync(jsonFile));
+        abi = JSON.parse(fs.readFileSync(jsonFile));
 
         const bep20 = new web3.eth.Contract(abi, bep20TokenAddress);
 
