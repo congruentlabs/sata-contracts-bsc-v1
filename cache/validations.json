@@ -1,0 +1,681 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "Ownable": {
+        "src": "@openzeppelin\\contracts\\access\\Ownable.sol:19",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin\\contracts\\access\\Ownable.sol:27"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts\\access\\Ownable.sol:20"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1967Proxy": {
+        "src": "@openzeppelin\\contracts\\proxy\\ERC1967\\ERC1967Proxy.sol:14",
+        "version": {
+          "withMetadata": "1f870d3621d83da960a4f9080305979532f969679a1fe84e7719181110371427",
+          "withoutMetadata": "1f870d3621d83da960a4f9080305979532f969679a1fe84e7719181110371427",
+          "linkedWithoutMetadata": "1f870d3621d83da960a4f9080305979532f969679a1fe84e7719181110371427"
+        },
+        "inherit": [
+          "ERC1967Upgrade",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC1967Proxy",
+            "src": "@openzeppelin\\contracts\\proxy\\ERC1967\\ERC1967Proxy.sol:21"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1967Upgrade": {
+        "src": "@openzeppelin\\contracts\\proxy\\ERC1967\\ERC1967Upgrade.sol:17",
+        "inherit": [],
+        "libraries": [
+          "StorageSlot",
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Proxy": {
+        "src": "@openzeppelin\\contracts\\proxy\\Proxy.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IBeacon": {
+        "src": "@openzeppelin\\contracts\\proxy\\beacon\\IBeacon.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "implementation()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "TransparentUpgradeableProxy": {
+        "src": "@openzeppelin\\contracts\\proxy\\transparent\\TransparentUpgradeableProxy.sol:28",
+        "version": {
+          "withMetadata": "8a92c611a02b0be1687d3d9079f8f1526bc828ff0a586617c919230e095fb434",
+          "withoutMetadata": "8a92c611a02b0be1687d3d9079f8f1526bc828ff0a586617c919230e095fb434",
+          "linkedWithoutMetadata": "8a92c611a02b0be1687d3d9079f8f1526bc828ff0a586617c919230e095fb434"
+        },
+        "inherit": [
+          "ERC1967Proxy",
+          "ERC1967Upgrade",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,bytes)",
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)",
+          "upgradeToAndCall(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "TransparentUpgradeableProxy",
+            "src": "@openzeppelin\\contracts\\proxy\\transparent\\TransparentUpgradeableProxy.sol:33"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol:17",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol:21"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol:26"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin\\contracts\\utils\\Address.sol:8",
+        "version": {
+          "withMetadata": "9b8f4c2af38993060ba9838a64a7ba70034dfc3088937692ef5986b2b3359e3d",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin\\contracts\\utils\\Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin\\contracts\\utils\\Context.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "StorageSlot": {
+        "src": "@openzeppelin\\contracts\\utils\\StorageSlot.sol:31",
+        "version": {
+          "withMetadata": "6a187b71073695bf679f45f99ee67b2abb7c7874741a08a613668b9c7c3b7904",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\SafeMath.sol:15",
+        "version": {
+          "withMetadata": "fe45732cbc6fc20ee20f53e5a8b200d896d741a43ff8011f678cec1660384dda",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "BEP20TokenFactory": {
+        "src": "contracts\\BEP20TokenFactory.sol:8",
+        "version": {
+          "withMetadata": "ee9f833e88c76a8e2af4e36941d722bd42d7241f1185f291163afe8ae7f81715",
+          "withoutMetadata": "32f98a8a6290ec840db2340de30c078411b528f7e67930e5c4aef1b4f14ce3dc",
+          "linkedWithoutMetadata": "32f98a8a6290ec840db2340de30c078411b528f7e67930e5c4aef1b4f14ce3dc"
+        },
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "createBEP20Token(string,string,uint8,uint256,bool,address,address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "BEP20TokenFactory",
+            "src": "contracts\\BEP20TokenFactory.sol:14"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "BEP20TokenFactory",
+              "label": "logicImplement",
+              "type": "t_address",
+              "src": "contracts\\BEP20TokenFactory.sol:10"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "BEP20UpgradeableProxy": {
+        "src": "contracts\\BEP20UpgradeableProxy.sol:6",
+        "version": {
+          "withMetadata": "f80eb23c8d9abd63dafb5ee638572b57171c705150e594daf195763de2628053",
+          "withoutMetadata": "f80eb23c8d9abd63dafb5ee638572b57171c705150e594daf195763de2628053",
+          "linkedWithoutMetadata": "f80eb23c8d9abd63dafb5ee638572b57171c705150e594daf195763de2628053"
+        },
+        "inherit": [
+          "TransparentUpgradeableProxy",
+          "ERC1967Proxy",
+          "ERC1967Upgrade",
+          "Proxy"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "BEP20UpgradeableProxy",
+            "src": "contracts\\BEP20UpgradeableProxy.sol:8"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IBEP20": {
+        "src": "contracts\\IBEP20.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "decimals()",
+          "symbol()",
+          "name()",
+          "getOwner()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IProxyInitialize": {
+        "src": "contracts\\IProxyInitialize.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "initialize(string,string,uint8,uint256,bool,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Migrations": {
+        "src": "contracts\\Migrations.sol:4",
+        "version": {
+          "withMetadata": "484bd42e6ac057aede27a7ba5d75fd059c6bcd1c06cde33e3d90be9833098ced",
+          "withoutMetadata": "5c5f17f2d196df43d20114bcf4c8732530fb01a184fcaa4d75118168ceb9486a",
+          "linkedWithoutMetadata": "5c5f17f2d196df43d20114bcf4c8732530fb01a184fcaa4d75118168ceb9486a"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "setCompleted(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Migrations",
+            "src": "contracts\\Migrations.sol:8"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Migrations",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts\\Migrations.sol:5"
+            },
+            {
+              "contract": "Migrations",
+              "label": "last_completed_migration",
+              "type": "t_uint256",
+              "src": "contracts\\Migrations.sol:6"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Token": {
+        "src": "contracts\\Token.sol:9",
+        "version": {
+          "withMetadata": "0073ce1261bef03bfd607b7374c5b94dc5b7904cd3ad41257d24f145deb82943",
+          "withoutMetadata": "0a6b60f0f00f29404767c556d69f3c4fc234fc1bfa5656874cde771ee752aeb0",
+          "linkedWithoutMetadata": "0a6b60f0f00f29404767c556d69f3c4fc234fc1bfa5656874cde771ee752aeb0"
+        },
+        "inherit": [
+          "Initializable",
+          "IBEP20",
+          "Context"
+        ],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "()",
+          "initialize(string,string,uint8,uint256,bool,address)",
+          "renounceOwnership()",
+          "transferOwnership(address)",
+          "mintable()",
+          "getOwner()",
+          "decimals()",
+          "symbol()",
+          "name()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)",
+          "mint(uint256)",
+          "burn(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Token",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts\\Token.sol:12"
+            },
+            {
+              "contract": "Token",
+              "label": "_allowances",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts\\Token.sol:13"
+            },
+            {
+              "contract": "Token",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts\\Token.sol:14"
+            },
+            {
+              "contract": "Token",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "contracts\\Token.sol:15"
+            },
+            {
+              "contract": "Token",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "contracts\\Token.sol:16"
+            },
+            {
+              "contract": "Token",
+              "label": "_decimals",
+              "type": "t_uint8",
+              "src": "contracts\\Token.sol:17"
+            },
+            {
+              "contract": "Token",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "contracts\\Token.sol:19"
+            },
+            {
+              "contract": "Token",
+              "label": "_mintable",
+              "type": "t_bool",
+              "src": "contracts\\Token.sol:22"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "TokenNoMinting": {
+        "src": "contracts\\TokenNoMinting.sol:10",
+        "version": {
+          "withMetadata": "64478e3c08e61f9fd9230eb26d7dc91ea493a2613179a205c78b251c0daa838c",
+          "withoutMetadata": "52961695385f208fbcf8d687d9ffdec5d3639d0a7e8c8474c4638449463b7a64",
+          "linkedWithoutMetadata": "52961695385f208fbcf8d687d9ffdec5d3639d0a7e8c8474c4638449463b7a64"
+        },
+        "inherit": [
+          "Initializable",
+          "IBEP20",
+          "Context"
+        ],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "()",
+          "initialize(string,string,uint8,uint256,bool,address)",
+          "renounceOwnership()",
+          "transferOwnership(address)",
+          "mintable()",
+          "getOwner()",
+          "decimals()",
+          "symbol()",
+          "name()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "approveAndCall(address,uint256,bytes)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)",
+          "burn(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TokenNoMinting",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts\\TokenNoMinting.sol:13"
+            },
+            {
+              "contract": "TokenNoMinting",
+              "label": "_allowances",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts\\TokenNoMinting.sol:14"
+            },
+            {
+              "contract": "TokenNoMinting",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts\\TokenNoMinting.sol:15"
+            },
+            {
+              "contract": "TokenNoMinting",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "contracts\\TokenNoMinting.sol:16"
+            },
+            {
+              "contract": "TokenNoMinting",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "contracts\\TokenNoMinting.sol:17"
+            },
+            {
+              "contract": "TokenNoMinting",
+              "label": "_decimals",
+              "type": "t_uint8",
+              "src": "contracts\\TokenNoMinting.sol:18"
+            },
+            {
+              "contract": "TokenNoMinting",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "contracts\\TokenNoMinting.sol:20"
+            },
+            {
+              "contract": "TokenNoMinting",
+              "label": "_mintable",
+              "type": "t_bool",
+              "src": "contracts\\TokenNoMinting.sol:23"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ApproveAndCallFallBack": {
+        "src": "contracts\\interface\\ApproveAndCallFallBack.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "receiveApproval(address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ApproveAndCallFallBackTest": {
+        "src": "contracts\\test\\BEP20ApproveAndCallTest.sol:6",
+        "version": {
+          "withMetadata": "ba2ad3791fbb9c6e9789cb84b1dd0a78e0843b0b72e7de90cf8106a46c97da2c",
+          "withoutMetadata": "72e960bf9fb4b95119f8875c95a940a8b3f9ed809f5f2da96c05db3f30563bdf",
+          "linkedWithoutMetadata": "72e960bf9fb4b95119f8875c95a940a8b3f9ed809f5f2da96c05db3f30563bdf"
+        },
+        "inherit": [
+          "ApproveAndCallFallBack"
+        ],
+        "libraries": [],
+        "methods": [
+          "receiveApproval(address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}
